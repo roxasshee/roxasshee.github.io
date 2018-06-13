@@ -1,0 +1,70 @@
+body
+
+.wrapper {
+	background-color: blue;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+header {
+	background: #ffed74;
+	padding-top: 20px;
+	border: 1px black solid;
+}
+
+nav {
+	background-color: :#e8c66a;
+	padding: 20px;
+	border :1px black solid;
+}
+
+footer {
+	background-color: #ff957e;
+	padding: 20px;
+	border: 1px black solid;
+}
+
+div {
+	background-color: #ffe2b8;
+	padding: 20px;
+	border: 1px black solid;
+}
+article {
+	background-color: #e89c6c;
+	padding: 20px
+	border: 1px black solid;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif; color: transparent; font-weight: 300;
+}
+h2 {font-family: 'Quicksand', sans-serif; color: #202549; font-weight: 700;
+font-size:40px;
+}
+p {
+	font-family: 'Roboto', sans-serif; color: #20254b; font-weight: 300;
+}
+ul {
+	text-align: center;
+	list-style-type: none;
+	font-family: 'Roboto', sans-serif; color: #20254b; font-weight: 300;
+}
+li
+img
+
+
+#company {
+	font-family: 'Quicksand', sans-serif; color: #99c23b; font-weight: 700;
+}
+.imtro {
+	font-family: 'Roboto', sans-serif; color: #20254b; font-weight: 300;
+}
+.WTF {
+	max-height: 0;
+	max-width: : 1000;
+}
+
+#greenbitch {font-family: 'Quicksand', sans-serif; color: #99c23b; font-weight: 700;font-size: 40px;
+}
+#redrighthand {float: right;}
+#ouyea {text-align: center;}
