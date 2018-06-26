@@ -1,79 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:300');
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
 	background-color: #fff;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+}
+section {
+	padding:5em 0;
+}
+footer {
+	background:#202549;
+}
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3em;
+	margin-bottom: 1em;
+	color: #202549;
+}
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
 }
 
-h1 {
-	text-align: left;
-	font-family: Quicksand;
-	font-size: 50px;
-	color: #202549;
-	line-height: 15px;
+h3 {
+	color: grey;
+	font-size: 1.25em;
+}
+
+header {
+	background:#202549;
+}
+header img {
+	float:left;;
+}
+.navpanel {
+	float:right;
+	text-align:right;
+}
+header a {
+	color:#98c23a;
+	padding: .5em;
 	display: inline-block;
 }
-h3 {
-	font-family: Quicksand;
-	font-size: 35px;
-}
-
-h4 {
-	font-family: Roboto;
-	color: grey;
-	font-size: 18px;
-}
-strong{
-	font-variant: small-caps;
-}
-
-img {
-	display: block;
-}
-
-/*header {
-	background-color: #ffed74;
-	border: 1px black solid;
-	padding: 20px;
-}
-
-nav {
-	background-color: #e8c66a;
-	border: 1px black solid;
-	padding: 20px;
-}
-
-article {
-	background-color: #e89c6c;
-	border: 1px black solid;
-	padding: 20px;
-}
-
-footer {
-	background-color: #ff957e;
-	border: 1px black solid;
-	padding: 20px;
-}
-
-div / section {
-	background-color: #ffe2b8;
-	border: 1px black solid;
-	padding: 20px;
-}
-*/
-ul {
-	list-style-type: none;
-}
-
-a {
-	background-color: #202549;
+nav a {
 	color: white;
 	text-decoration: none;
-	display: block;
-	padding: 15px;
-	width:75px;
-	float: right;
+	display: inline-block;
+	padding: 1em;
 }
 
-li:hover a {
+header a:hover {
 	color: #98c23a;
 }
 
@@ -81,20 +57,14 @@ li:hover a {
 
 #madesimple {
 	color: #99cc33;
-	text-transform: uppercase;
 	border-bottom: 4px soild black;
-	display: inline-block;
+	
 }
 
 #freetrial {
 	color: #99cc33;
 }
 
-#two_colum {
-	background-color: #ffb7cf;
-	border: 1px black solid;
-	padding: 20px;
-}
 
 
 #left {
@@ -118,6 +88,9 @@ li:hover a {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
+#one {
+    font-size: 1.5em;
+}
 /* For Class  Use*/
 
 .clearfix:after {
@@ -131,24 +104,30 @@ li:hover a {
 
 .column {
 	float:left;
-	width: 260px;
-	height: 300px;
+	width: 25%;
 	padding: 20px;
-	margin: 0;
 }
 
 .column2 {
-	float:right;
-	width: 260px;
-	height: 300px;
+	float: left;
+	width: 50%;
 	padding: 20px;
-	margin: 0;
-	display: block;
 }
-
+.column2 img {
+	width:100%;
+}
 .paragraph {
 	display:block;
 	clear: both;
 	padding-top: 30px;
 
+}
+.cta {
+	display:inline-block;
+	background: #99cc33;
+	color:#fff;
+	text-decoration:none;
+	padding:1em 2em;
+	border-radius: .25em;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
 }
