@@ -7,41 +7,52 @@ body {
 	color: #202549;
 }
 section {
-	padding:5em 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #202549;
 }
 footer {
-	background:#202549;
+	padding-top: 1em;
+	background: #202549;
+	text-align: center;
 }
 h1 {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	margin-bottom: 1em;
 	
 }
 h2 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 2em;
+	font-family: 'roboto', sans-serif;
+	font-size: 0.9em;
 	margin-bottom: 1em;
+	color: #202549;
 
 }
 
 h3 {
 	color: grey;
-	font-size: 1.25em;
+	font-size: 0.7em;
 }
 
 header {
-	background:#202549;
+	background: #202549;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 1em;
 }
 header img {
-	float:left;;
+	float: left;
+
 }
+
 .navpanel {
 	float:right;
 	text-align:right;
 }
+
 header a {
-	color:#98c23a;
+	color: #98c23a;
 	padding: .5em;
 	display: inline-block;
 }
@@ -55,6 +66,8 @@ nav a {
 header a:hover {
 	color: #98c23a;
 }
+
+
 
 /* For ID  Use*/
 
@@ -72,8 +85,8 @@ header a:hover {
 
 #left {
 	background-color: violet;
-	border:1px black solid;
-	padding:20px;
+	border: 1px black solid;
+	padding: 20px;
 	float: left;
 	width: 30%;
 }
@@ -93,6 +106,33 @@ header a:hover {
 }
 #one {
     font-size: 1.5em;
+}
+
+#ourusers {
+	max-width: 700px;
+	display: block;
+	margin-right: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+#whiteFont {
+	color: #fff;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#quote {
+	color:#fff;
+}
+
+#darkFont {
+	color: #202549;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+	text-align: center;
 }
 /* For Class  Use*/
 
@@ -116,9 +156,11 @@ header a:hover {
 	width: 50%;
 	padding: 20px;
 }
+
 .column2 img {
-	width:100%;
+	width: 100%;
 }
+
 .paragraph {
 	display:block;
 	clear: both;
@@ -127,20 +169,82 @@ header a:hover {
 }
 .cta {
 	display:inline-block;
+	font-size: 0.8em;
 	background: #99cc33;
 	color:#fff;
 	text-decoration:none;
-	padding:0.5em 1em;
+	padding: 0.5em 1em;
 	border-radius: .25em;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+	margin-bottom: 2em;
 }
 .cta2 {
 	display:inline-block;
+	font-size: 0.8em;
 	background: #202549;
 	color:#fff;
 	text-decoration:none;
-	padding:0.5em 1em;
+	padding: 0.5em 1em;
 	border-radius: .25em;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
 	margin-right: 3em;
+}
+
+.award { 
+	display: block;
+	background-color: #202549;
+}
+
+.icon {
+	max-width: 60px;
+}
+
+.icon2 {
+	max-width: 30px;
+	margin: 0px 10px 0px 10px;
+}
+
+/* For the Quote"
+
+
+/* For Media Queries */
+@media only screen and (max-width: 768px) {
+	.column2, .clearfix {
+		float:none;
+		width:auto;
+	}
+
+	h1, h2 {
+		text-align: center;
+		font-size: 0.9em;
+		margin-bottom: 1em;
+		color: #202549;
+	}
+
+	nav a {
+		display: block;
+		text-align: center;
+		margin:0;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	section { width:95%;
+	 }
+	 .column {
+	 	display: none;
+	 }
+	 .icon {
+	 	text-align: centre;
+	 }
+	 .cta2 {
+	 	text-align: centre;
+	 }
+
+	 nav a {
+	 	display: block;
+	 	text-align: center;
+	 }
 }
