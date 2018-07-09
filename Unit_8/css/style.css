@@ -46,6 +46,7 @@ header img {
 
 }
 
+/* NAVIGATION */
 .navpanel {
 	float:right;
 	text-align:right;
@@ -104,28 +105,15 @@ header a:hover {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-#one {
+.headerCopy {
     font-size: 1.5em;
 }
 
-#ourusers {
-	max-width: 700px;
-	display: block;
-	margin-right: auto;
-	margin-right: auto;
-	width: 50%;
-}
-
-
-#whiteFont {
-	color: #fff;
-	font-family: "Quicksand", sans-serif;
-	font-size: 1.5em;
+.align-center {
 	text-align: center;
 }
-
-#quote {
-	color:#fff;
+.align-left {
+	text-align: left;
 }
 
 #darkFont {
@@ -136,7 +124,7 @@ header a:hover {
 }
 /* For Class  Use*/
 
-.clearfix:after {
+.clearfix:before {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -151,13 +139,13 @@ header a:hover {
 	padding: 20px;
 }
 
-.column2 {
+.column-50 {
 	float: left;
 	width: 50%;
 	padding: 20px;
 }
 
-.column2 img {
+.column-50 img {
 	width: 100%;
 }
 
@@ -190,9 +178,35 @@ header a:hover {
 	margin-right: 3em;
 }
 
-.award { 
-	display: block;
+/* OUR USERS LOGOS */
+.ourusers {
+	width: 70%;
+}
+
+
+
+/* AWARD PANEL */
+.award {
 	background-color: #202549;
+	color: #fff;
+	text-align: center;
+}
+.award h2 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+	color: #fff;
+}
+.quote {
+	width: 70%;
+	margin: 0 auto;
+}
+.quote img {
+	float: left;
+	margin: 0 20px 20px 0;	
+}
+.quote p {
+	float: left;
+	width: 80%;
 }
 
 .icon {
