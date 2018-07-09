@@ -124,7 +124,7 @@ header a:hover {
 }
 /* For Class  Use*/
 
-.clearfix:before {
+.clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
