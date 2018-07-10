@@ -153,6 +153,9 @@ header a:hover {
 	display:block;
 	clear: both;
 	padding-top: 30px;
+	width: 70%
+	text-align: center;
+	;
 
 }
 .cta {
@@ -180,7 +183,7 @@ header a:hover {
 
 /* OUR USERS LOGOS */
 .ourusers {
-	width: 70%;
+	width: 51%;
 }
 
 
@@ -190,6 +193,7 @@ header a:hover {
 	background-color: #202549;
 	color: #fff;
 	text-align: center;
+	padding: 2em 0 2em 0;
 }
 .award h2 {
 	font-family: "Quicksand", sans-serif;
