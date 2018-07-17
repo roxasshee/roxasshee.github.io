@@ -10,6 +10,7 @@ section {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #202549;
+	margin-left: 7%;
 }
 footer {
 	padding-top: 1em;
@@ -159,7 +160,7 @@ header a:hover {
 	transform:translateY(-50%);
 }
 
-.column-50: nth-of-type(odd) > div{
+.column-50: nth-of-type(odd) > div {
 	left: 50%;
 }
 
@@ -187,9 +188,8 @@ header a:hover {
 	display:block;
 	clear: both;
 	padding-top: 30px;
-	width: 70%
-	text-align: center;
-	;
+	width: 70%;
+	margin-left: 15%;
 
 }
 .cta {
@@ -283,19 +283,42 @@ header a:hover {
 	width: 20%;
 	padding: 1em;
 }
-
 /* For the Quote"
 
 
 /* For Media Queries */
+@media only screen and (max-width: 1396px) {
+	.column-50 > * {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+
+	section img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width:50%;
+	}
+	.cta, .cta2 {
+		display: block;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1em;
+		width: 50%;
+	}
+	a {
+		text-align: center;
+	}
+
 @media only screen and (max-width: 768px) {
-	.column50, .clearfix {
+	.column-50 {
 		float:none;
 		width:auto;
 	}
 
 	h1, h2 {
-		
 		text-align: center;
 		font-size: 0.9em;
 		margin-bottom: 1em;
@@ -307,37 +330,45 @@ header a:hover {
 		text-align: center;
 		margin:0;
 	}
-
-	.cta2 .cta {
-	 	text-align: center;
-	 }
+	.icon3 {
+		display: none;
+	}
+	
 
 	 section img {
 	 	text-align: center;
 	 }
-
-	 .column-50 {
-	 	float: none;
-	 	width: auto;
+	 section { 
+		float: none;
+		width:90%;
 	 }
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480) {
 
-	section { width:95%;
+	section { 
+		float: none;
+		width:90%;
 	 }
+
+	 section img {
+	 	display: none;
+	 }
+
 	 .column {
 	 	display: none;
 	 }
-	 .column50 {
-	 	text-align: center
+	 .column-50 {
+	 	text-align: center;
+	 	float: none;
 	 }
 	 .icon {
 	 	text-align: center;
 	 }
-	 .cta2 .cta{
-	 	text-align: center;
+
+	 .icon3 {
+	 	display: none;
 	 }
 
 	 nav a {
