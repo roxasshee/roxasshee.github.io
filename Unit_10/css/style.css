@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:300');
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	color: #202549;
+}
+section {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #202549;
+}
+footer {
+	padding: 3em 0;
+	background: #202549;
+	text-align: center;
+}
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+	margin-bottom: 1em;
+	
+}
+h2 {
+	font-family: 'roboto', sans-serif;
+	font-size: 0.9em;
+	margin-bottom: 1em;
+	color: #202549;
+
+}
+
+h3 {
+	color: grey;
+	font-size: 0.7em;
+}
+
+h4 {
+	margin-top: 2em;
+}
+
+
+header {
+	background: #202549;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 1em;
+}
+header img {
+	float: left;
+}
+
+main {
+	margin-left: 15em;
+	margin-right: 15em;
+}
+
+/* NAVIGATION */
+.navpanel {
+	float:right;
+	text-align:right;
+}
+
+header a {
+	color: #98c23a;
+	padding: .5em;
+	display: inline-block;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+}
+
+header a:hover {
+	color: #98c23a;
+}
+
+q {
+	display: inline;
+}
+
+/* For ID  Use*/
+
+#madesimple {
+	color: #99cc33;
+	border-bottom: 4px soild black;
+	
+}
+
+#freetrial {
+	color: #99cc33;
+}
+
+
+
+#left {
+	background-color: violet;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+}
+
+#right {
+	background-color: pink;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 62%;
+}
+
+#logo {
+	background-color: #202549;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#darkFont {
+	color: #202549;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 2em;
+}
+/* For Class  Use*/
+
+.headerCopy {
+    font-size: 1.5em;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.headerCopy >* {
+	width: 50%;
+	float: left;
+}
+
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+
+.clearfix:after,  .column-50:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+/* this is for the award */
+.column {
+	float:left;
+	width: 25%;
+	padding: 0 1em;
+}
+/*half page column*/
+.column-50 > * {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.column-50 > div {
+	position:absolute;
+	top: 50%;
+	transform:translateY(-50%);
+}
+
+.column-50:nth-of-type(odd) > div {
+	left: 50%;
+}
+
+.column-50 div > div {
+	width: 75%;
+	margin-left: 5%;
+}
+
+.column-50 div > * {
+	float : left;
+}
+
+.column-50 {
+	position: relative;
+}
+
+
+.paragraph .column-50:nth-of-type(even) > * {
+	float: right;
+}
+.paragraph {
+	display:block;
+	padding-top: 4em 0;
+
+}
+.cta {
+	display:block;
+	font-size: 0.8em;
+	background: #99cc33;
+	color:#fff;
+	text-decoration:none;
+	padding: 0.5em ;
+	border-radius: .25em;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+	margin-bottom: 2em;
+	text-align: center;
+	max-width: 10em;
+	clear: both;
+	margin: 2em auto;
+}
+.cta2 {
+	display:inline-block;
+	font-size: 0.8em;
+	background: #202549;
+	color:#fff;
+	text-decoration:none;
+	padding: 0.5em;
+	border-radius: .25em;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+	text-align: center;
+	max-width: 10em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+
+.cta3 {
+	display:inline-block;
+	font-size: 0.8em;
+	background: #99cc33;
+	color:#fff;
+	text-decoration:none;
+	padding: 0.5em ;
+	border-radius: .25em;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+	margin-bottom: 2em;
+	text-align: center;
+	max-width: 10em;
+}
+
+/* OUR USERS LOGOS */
+.ourusers {
+	display: block;
+	width: 50%;
+	margin: 0 auto 2em;
+}
+
+
+
+/* AWARD PANEL */
+.award {
+	background-color: #202549;
+	color: #fff;
+	text-align: center;
+	padding: 2em 0 3em;
+}
+.award h2 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5em;
+	color: #fff;
+}
+.quote {
+	width: 70%;
+	margin: 0 auto 3em;
+	text-align: left;
+}
+.quote img {
+	float: left;
+	margin: 0 20px 20px 0;	
+}
+.quote p {
+	float: left;
+	width: 80%;
+}
+
+.icon {
+	max-width: 30%;
+}
+
+.icon2 {
+	max-width: 30px;
+	margin: 0px 10px 0px 10px;
+}
+
+.icon3 {
+	max-width: 10%;
+}
+
+
+
+/* For the More Features */
+.icon4 {
+	max-width: 50%;
+}
+.moreFeatures {
+	background-color: #fff;
+	color: #202549;
+	text-align: center;
+	padding: 0.5em 0 0.5em 0;
+	margin-top: 2em;
+}
+
+.column20 {
+	float:left;
+	width: 20%;
+	padding: 1em;
+}
+/* For the Quote" */
+.wrapper {
+	max-width:1200px;
+	margin:auto;
+}
+.quote {
+	max-width: 65%;
+	margin: 0 auto;
+	text-align: left;
+}
+q:before {
+	content: "\201C";
+
+}
+q:after {
+	content:"\201C";
+}
+cite:before {
+	content: "\2014 \2009";
+}
+cite {
+	display:block;
+	margin-bottom: 2em;
+}
+/* For Media Queries */
+
+
+@media only screen and (max-width: 768px) {
+	
+
+
+
+	nav a {
+		display: block;
+		text-align: center;
+		margin:0;
+	}
+	.icon3 {
+		display: none;
+	}
+	
+
+	 section img {
+	 	text-align: center;
+	 	width: auto;
+	 }
+	
+	 .headerCopy img {
+	 	width: 90%;
+	 	margin: auto;
+	 }
+	 .headerCopy {
+	 	float: none;
+	 	width: auto;
+	 }
+	 .headerCopy > * {
+	 	padding: 1em;
+	 	width: auto;
+	 }
+	 .ourusers {
+	 	width: 100%;
+	 }
+	 header {
+	 	padding: 1em;
+	 }
+}
+@media only screen and (max-width: 493px) {
+
+	section { 
+		float: none;
+	 }
+
+	 .column {
+	 	display: none;
+	 }
+	 .column-50 > div {
+	 	position: initial;
+	 	top: 50%;
+	 	transform: none;
+	 }
+	 	.column-50 > * {
+		float: none;
+		width: auto;
+	}
+	.column-50 img {
+		width: 90%;
+		margin: auto;
+	}
+	 .icon {
+	 	text-align: center;
+	 }
+
+	 .icon3 {
+	 	display: none;
+	 }
+
+	 nav a {
+	 	display: block;
+	 	text-align: center;
+	 }
+	 .column20 img {
+	 	display: none;
+	 }
+	 .column20 h4 {
+	 	display: none;
+	 }
+
+	 
+}
