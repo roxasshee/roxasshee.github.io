@@ -10,10 +10,9 @@ section {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #202549;
-	margin-left: 7%;
 }
 footer {
-	padding-top: 1em;
+	padding: 3em 0;
 	background: #202549;
 	text-align: center;
 }
@@ -36,6 +35,9 @@ h3 {
 	font-size: 0.7em;
 }
 
+h4 {
+	margin-top: 2em;
+}
 
 
 header {
@@ -75,7 +77,9 @@ header a:hover {
 	color: #98c23a;
 }
 
-
+q {
+	display: inline;
+}
 
 /* For ID  Use*/
 
@@ -118,11 +122,19 @@ header a:hover {
 	font-family: "Quicksand", sans-serif;
 	font-size: 1.5em;
 	text-align: center;
+	margin-top: 2em;
 }
 /* For Class  Use*/
 
 .headerCopy {
     font-size: 1.5em;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.headerCopy >* {
+	width: 50%;
+	float: left;
 }
 
 .align-center {
@@ -132,7 +144,7 @@ header a:hover {
 	text-align: left;
 }
 
-.clearfix:after {
+.clearfix:after,  .column-50:after{
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -145,7 +157,7 @@ header a:hover {
 .column {
 	float:left;
 	width: 25%;
-	padding: 20px;
+	padding: 0 1em;
 }
 /*half page column*/
 .column-50 > * {
@@ -160,7 +172,7 @@ header a:hover {
 	transform:translateY(-50%);
 }
 
-.column-50: nth-of-type(odd) > div {
+.column-50:nth-of-type(odd) > div {
 	left: 50%;
 }
 
@@ -177,23 +189,17 @@ header a:hover {
 	position: relative;
 }
 
-.column-50 img {
-	width: 50%;
-}
 
-.paragraph .column-50: nth-of-type(even) > * {
+.paragraph .column-50:nth-of-type(even) > * {
 	float: right;
 }
 .paragraph {
 	display:block;
-	clear: both;
-	padding-top: 30px;
-	width: 70%;
-	margin-left: 15%;
+	padding-top: 4em 0;
 
 }
 .cta {
-	display:inline-block;
+	display:block;
 	font-size: 0.8em;
 	background: #99cc33;
 	color:#fff;
@@ -204,6 +210,8 @@ header a:hover {
 	margin-bottom: 2em;
 	text-align: center;
 	max-width: 10em;
+	clear: both;
+	margin: 2em auto;
 }
 .cta2 {
 	display:inline-block;
@@ -217,11 +225,28 @@ header a:hover {
 	text-align: center;
 	max-width: 10em;
 	margin-right: 2em;
+	margin-top: 2em;
+}
+
+.cta3 {
+	display:inline-block;
+	font-size: 0.8em;
+	background: #99cc33;
+	color:#fff;
+	text-decoration:none;
+	padding: 0.5em ;
+	border-radius: .25em;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+	margin-bottom: 2em;
+	text-align: center;
+	max-width: 10em;
 }
 
 /* OUR USERS LOGOS */
 .ourusers {
-	width: 51%;
+	display: block;
+	width: 50%;
+	margin: 0 auto 2em;
 }
 
 
@@ -231,7 +256,7 @@ header a:hover {
 	background-color: #202549;
 	color: #fff;
 	text-align: center;
-	padding: 2em 0 2em 0;
+	padding: 2em 0 3em;
 }
 .award h2 {
 	font-family: "Quicksand", sans-serif;
@@ -240,7 +265,8 @@ header a:hover {
 }
 .quote {
 	width: 70%;
-	margin: 0 auto;
+	margin: 0 auto 3em;
+	text-align: left;
 }
 .quote img {
 	float: left;
@@ -283,47 +309,37 @@ header a:hover {
 	width: 20%;
 	padding: 1em;
 }
-/* For the Quote"
+/* For the Quote" */
+.wrapper {
+	max-width:1200px;
+	margin:auto;
+}
+.quote {
+	max-width: 65%;
+	margin: 0 auto;
+	text-align: left;
+}
+q:before {
+	content: "\201C";
 
-
+}
+q:after {
+	content:"\201C";
+}
+cite:before {
+	content: "\2014 \2009";
+}
+cite {
+	display:block;
+	margin-bottom: 2em;
+}
 /* For Media Queries */
-@media only screen and (max-width: 1396px) {
-	.column-50 > * {
-		float: none;
-		width: auto;
-		text-align: center;
-	}
 
-	section img {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		width:50%;
-	}
-	.cta, .cta2 {
-		display: block;
-		text-align: center;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 1em;
-		width: 50%;
-	}
-	a {
-		text-align: center;
-	}
 
 @media only screen and (max-width: 768px) {
-	.column-50 {
-		float:none;
-		width:auto;
-	}
+	
 
-	h1, h2 {
-		text-align: center;
-		font-size: 0.9em;
-		margin-bottom: 1em;
-		color: #202549;
-	}
+
 
 	nav a {
 		display: block;
@@ -337,32 +353,50 @@ header a:hover {
 
 	 section img {
 	 	text-align: center;
+	 	width: auto;
 	 }
-	 section { 
-		float: none;
-		width:90%;
+	
+	 .headerCopy img {
+	 	width: 90%;
+	 	margin: auto;
 	 }
-
+	 .headerCopy {
+	 	float: none;
+	 	width: auto;
+	 }
+	 .headerCopy > * {
+	 	padding: 1em;
+	 	width: auto;
+	 }
+	 .ourusers {
+	 	width: 100%;
+	 }
+	 header {
+	 	padding: 1em;
+	 }
 }
-
-@media only screen and (max-width: 480) {
+@media only screen and (max-width: 493px) {
 
 	section { 
 		float: none;
-		width:90%;
-	 }
-
-	 section img {
-	 	display: none;
 	 }
 
 	 .column {
 	 	display: none;
 	 }
-	 .column-50 {
-	 	text-align: center;
-	 	float: none;
+	 .column-50 > div {
+	 	position: initial;
+	 	top: 50%;
+	 	transform: none;
 	 }
+	 	.column-50 > * {
+		float: none;
+		width: auto;
+	}
+	.column-50 img {
+		width: 90%;
+		margin: auto;
+	}
 	 .icon {
 	 	text-align: center;
 	 }
@@ -381,4 +415,6 @@ header a:hover {
 	 .column20 h4 {
 	 	display: none;
 	 }
+
+	 
 }
